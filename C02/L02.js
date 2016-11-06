@@ -29,8 +29,10 @@ var lineChart2 = new Chart(ctx2, {
       {
         label: "2015",
         data: [10,8,6,5,12,8,16,17,6,7,6,10],
+        fill:false, //default:grey, add this to enable transparent
         borderColor:"black",
-        borderWidth:2
+        borderWidth:1,
+        lineTension:0   //0-1,leave it default.
 
       }
     ]
