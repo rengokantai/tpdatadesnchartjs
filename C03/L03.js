@@ -19,17 +19,13 @@ var lineChart = new Chart(ctx, {
   type: 'bar',
   data: {
     labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-    datasets: [
-      {
-        label: "2015",
-        data: [10,8,6,5,12,8,16,17,6,7,6,10],
-        backgroundColor: "rgba(39,79,76,.5)",
-        borderColor: "rgb(39,79,76)",
-        borderWidth: 1
-      }
-    ]
+    datasets: [data2015, data2016]
   },
   options: {
-    maintainAspectRatio: false
+    maintainAspectRatio: false,
+    scales: {
+      xAxes: [{ stacked: true }],
+      yAxes: [{ stacked: true }]
+    }
   }
 });
