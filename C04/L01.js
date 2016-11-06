@@ -11,3 +11,20 @@ var pieColors = [
   "rgb(255,36,0)",
   "rgb(194,250,255)"
 ];
+
+
+var pieChart = new Chart(ctx, {
+  type: 'pie',
+  data: {
+    labels: pieLabels,
+    datasets: [
+      {
+        data: pieData,
+        backgroundColor: pieColors
+      }
+    ]
+  },
+  options: {
+    maintainAspectRatio: false
+  }
+});
