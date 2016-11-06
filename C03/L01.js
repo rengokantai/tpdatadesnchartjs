@@ -1,4 +1,4 @@
-var ctx = $("#Buffer.compare(buf1, buf2)-chart");
+var ctx = $("#bar-chart");
 var lineChart = new Chart(ctx, {
   type: 'bar',
   data: {
