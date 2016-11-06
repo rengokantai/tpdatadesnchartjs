@@ -1,6 +1,6 @@
 var ctx = $("#bar-chart");
 var lineChart = new Chart(ctx, {
-  type: 'bar',
+  type: 'horizontalBar',
   data: {
     labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
     datasets: [
