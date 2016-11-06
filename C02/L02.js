@@ -32,8 +32,8 @@ var lineChart2 = new Chart(ctx2, {
         fill:false, //default:grey, add this to enable transparent
         borderColor:"black",
         borderWidth:1,
-        lineTension:0   //0-1,leave it default.
-
+        lineTension:0,   //0-1,leave it default.
+        borderDash:[5,5] //5line followed by 5 dash
       }
     ]
   },
