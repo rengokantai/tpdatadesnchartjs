@@ -6,3 +6,6 @@
   border-radius: 4px;
 }
 
+.chart-container.dark {
+  background-color: #333;
+}

@@ -1,3 +1,6 @@
+Chart.defaults.global.maintainAspectRatio = false;
+Chart.defaults.global.legend.labels.fontStyle = "italic";
+
 var ctx = $("#pie-chart");
 
 var pieLabels = ["Apple", "Pecan", "Key Lime", "Cherry", "Coconut"];
@@ -12,7 +15,6 @@ var pieColors = [
   "rgb(194,250,255)"
 ];
 
-
 var pieChart = new Chart(ctx, {
   type: 'pie',
   data: {
@@ -23,8 +25,27 @@ var pieChart = new Chart(ctx, {
         backgroundColor: pieColors
       }
     ]
+  }
+});
+
+var ctx2 = $("#pie-chart2");
+var pieChart2 = new Chart(ctx2, {
+  type: 'pie',
+  data: {
+    labels: pieLabels,
+    datasets: [
+      {
+        data: pieData,
+        backgroundColor: pieColors,
+        borderColor: "#333"
+      }
+    ]
   },
   options: {
-    maintainAspectRatio: false
+    legend: {
+      labels: {
+        fontColor: "#ddd"
+      }
+    }
   }
 });
