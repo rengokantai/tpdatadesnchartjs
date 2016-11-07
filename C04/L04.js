@@ -30,7 +30,7 @@ var pieChart = new Chart(ctx, {
 
 var ctx2 = $("#pie-chart2");
 var pieChart2 = new Chart(ctx2, {
-  type: 'pie',
+  type: 'doughnut',
   data: {
     labels: pieLabels,
     datasets: [
@@ -46,6 +46,7 @@ var pieChart2 = new Chart(ctx2, {
       labels: {
         fontColor: "#ddd"
       }
-    }
+    },
+    cutoutPercentage: 90
   }
 });
